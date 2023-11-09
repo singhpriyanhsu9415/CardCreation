@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#container{margin-left: 10px;
+    margin-right: 10px;
+    width: 100vh;
+    height: 100vh;
+    overflow-x: none;
+}
+
+#navlist{list-style: none;
+   
+    background-color: rgb(15, 230, 230);
+    font-size: 4vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+}
+#navlogo{ margin-left: 40px;
+    font-size: 8vh;
+    color: rgba(240, 229, 229, 0.818);
+}
+a{
+    text-decoration: none;
+    color: rgb(220, 220, 233);
+    
+}
+#navitem{ margin-right: 40px;
+    display: flex;
+    gap: 50px;
+    justify-content: space-around;
+    transition: all;
+    transition-duration: 3s;
+    transition-delay: 1ms;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+#a:hover{
+    transform: scale(1.2);
+}
+#b:hover{
+    transform: scale(1.2);
+}
+#c:hover{
+    transform: scale(1.2);
+}
+.contentbox{margin: auto;
+    padding: 40px;
+    width: 60%;
+    background-color: antiquewhite;
+    border: 1px solid black;
+    box-shadow: 0ch 0ch 600ch 10ch black;
+}
+.footer{
+    background-color: aqua;
+    font-size: 4vh;
+    text-align: center;
+    height: 50px;
+}
+.item1{margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    font-size: x-large;
+}
+.item2{margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    font-size: x-large;
+}
+.item3{margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    font-size: x-large;
+}
+.item4{margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    font-size: x-large;
+}
+.rightbox img{border-radius: 20px;
+    transition: all;
+    transition-duration: 3s;
+    transition-delay: 1ms;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+box-shadow:0ch 0ch 60ch 10ch black;
+
+}
+.rightbox:hover{
+    transform: scale(1.2);
+}
+.rightbox{
+    position: relative;  /*position of the rightbox is relative so that the overlay can be adjusted on rightbox item */
+    overflow: hidden;
+    border-radius: 20px;
+  
+
+}
+.rightbox .overlay{ /* inside rightbox operation on the overlay class */
+    position: absolute; 
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+opacity: 0;   /* no effect */
+transition: all;
+transition-duration: 1s;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+}
+.rightbox .overlay span{
+    color: rgb(1, 12, 12);
+    font-size: larger;
+}
+.rightbox:hover .overlay{ /* on hovering on the rightbox overlay properities will be activeted*/
+    opacity: 1;
+}
